@@ -111,6 +111,41 @@
                 transform: scale(1);
             }
         }
+        
+        .tombol-tutorial {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #FF0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .tombol-tutorial:hover {
+            background-color: #CC0000;
+            transform: scale(1.05);
+        }
+        
+        .popup-video {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+        
+        .tombol-tutorial:hover .popup-video {
+            display: block;
+        }
     </style>
 </head>
 
@@ -122,11 +157,52 @@
             <p>Pengawas Satker Kec. Kertasari: Oma, S.Pd</p>
             <div class="buttons">
                 <a href="https://miftahsidik99.github.io/fase-a/" class="btn">Perangkat Pembelajaran Fase A</a>
-                <a href="https://miftahsidik99.github.io/fase-b/" class="btn">Perangkat Pembelajaran Fase B</a>
-                <a href="https://miftahsidik99.github.io/fase-c/" class="btn">Perangkat Pembelajaran Fase C</a>
+                <a href="index2.html" class="btn">Perangkat Pembelajaran Fase B</a>
+                <a href="index3.html" class="btn">Perangkat Pembelajaran Fase C</a>
+                <a href="https://youtu.be/Tjc-fvcgvrY?si=wv3ovLGXAtUd5AjE" class="tombol-tutorial" target="_blank">
+                    Lihat Video Tutorial
+                    <div class="popup-video">
+                        <iframe width="280" height="157" src="https://www.youtube.com/embed/Tjc-fvcgvrY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 </body>
+
+
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tombol Beranimasi</title>
+    <style>
+        .tombol-animasi {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .tombol-animasi:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="tombol-animasi">Lihat Tutorial!</button>
+</body>
+
+</html>
 
 </html>
